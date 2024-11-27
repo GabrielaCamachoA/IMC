@@ -6,10 +6,6 @@ function calcular(event) {
   let total = inputPeso / (inputAltura * inputAltura);
   document.getElementById("divImagen").style.visibility = "visible";
   document.getElementById("divImagen").style.margin = "14px";
-  document.getElementById("divImagen").style.width = "260px";
-  document.getElementById("divImagen").style.height = "378px";
-  document.getElementById("container").style.width = "580px";
-  document.getElementById("container").style.height = "452px";
 
   if (total < 18.5) {
     document.getElementById(

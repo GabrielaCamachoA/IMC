@@ -16,8 +16,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 444px;
-    height: 365px;
+    max-width: 583px;
+    max-height: 450px;
     padding: 30px;
     background-color: #fff;
     border-radius: 8px;
@@ -36,7 +36,7 @@ label{
     padding: 6px;
     border-radius: 5px;
     border: 1px solid rgb(175, 174, 174);
-    width: 360px
+    width: 100%;
 }
 .form input:focus{
     outline: none;
@@ -62,6 +62,7 @@ label{
     background-image: url(./img/imc.jpg);
     background-repeat: no-repeat;
     transition: background-position 0.4s;
+    border-radius: 6px;
 }
 .imagen p{
     display: flex;
@@ -69,16 +70,38 @@ label{
     margin-top: 330px;
     background-color: #F2F2F2;
     height: 44px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 .peso1{
-    background-position: -30px -36px; 
+    background-position: -26px -36px;
+    min-width: 126px;
 }
 .peso2{
-    background-position: -179px -38px;
+    background-position: -172px -38px;
+    min-width: 136px;
 }
 .peso3{
-    background-position: -320px -38px;
+    background-position: -315px -38px;
+    min-width: 146px;
 }
 .peso4{
-    background-position: -474px -38px;
+    background-position: -470px -38px;
+    min-width: 137px;
+}
+
+@media screen and (max-width: 576px){
+   .contenedor{
+    max-width: 325px;
+    padding: 20px;
+    flex-direction: column-reverse;
+    max-height: 756px;
+   }
+   h1{
+    font-size: 20px;
+   }
+   label{
+    font-size: 14px;
+    margin-top: 10px;
+   }
 }
